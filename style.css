@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg), var(--dark-cyan);
+    background-position: right 51vw bottom 37vh,left 50vw top 45vh;
+    background-repeat: no-repeat;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #fff;
+}
+
+.bg {
+    border-radius: 15px 15px 0 0;
+}
+
+.victor {
+    position: absolute;
+    top: 23%;
+    left: 36%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.name-age {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0 25px 0;
+}
+
+.name-age span {
+    color: #000;
+    font-weight: 700;
+}
+
+.name-age p {
+    color: var(--dark-gray);
+}
+
+.name-age .city {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.section-bottom {
+    width: 350px;
+}
+
+hr {
+    border: 0.5px solid var(--dark-gray);
+    opacity: 0.2;
+}
+
+.digit-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 50px 25px 50px;
+}
+
+.digit-text div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.digit {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.text {
+    color: var(--dark-gray);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
